@@ -21,6 +21,9 @@ body {
 }
 
 .gallery-item {
-  width: calc((100% - 2*24px)/3);
-  object-fit: cover;
+  list-style-type: none;
+}
+
+img {
+  object-fit: fill;
 }
