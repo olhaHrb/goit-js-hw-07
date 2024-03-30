@@ -1,20 +1,19 @@
 const nameInput = document.querySelector("#name-input");
-
 const nameOutput = document.querySelector("#name-output");
-    
-    
-function handleInput(event) {
+
+
+function handleBlur(event) {
     event.preventDefault();
 
-    if (nameInput.length === 0) {
-       console.log(111);
-    } else {
-        nameOutput.textContent = event.currentTarget.value;
+    if (event.target.value === "") {
+        nameOutput.textContent = "Anonymous";
         
+    } else {
+        nameOutput.textContent = event.target.value;        
     }
   
 };
 
-nameInput.addEventListener("input", handleInput)
+nameInput.addEventListener("blur", handleBlur)
 
 
