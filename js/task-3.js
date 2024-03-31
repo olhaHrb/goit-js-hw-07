@@ -5,7 +5,7 @@ const nameOutput = document.querySelector("#name-output");
 function handleBlur(event) {
     event.preventDefault();
 
-    if (event.target.value === "") {
+    if (event.target.value.trim() === "") {
         nameOutput.textContent = "Anonymous";
         
     } else {
