@@ -2,7 +2,7 @@ const nameInput = document.querySelector("#name-input");
 const nameOutput = document.querySelector("#name-output");
 
 
-function handleBlur(event) {
+function handleInput(event) {
     event.preventDefault();
 
     if (event.target.value.trim() === "") {
@@ -14,6 +14,6 @@ function handleBlur(event) {
   
 };
 
-nameInput.addEventListener("blur", handleBlur)
+nameInput.addEventListener("input", handleInput);
 
 
