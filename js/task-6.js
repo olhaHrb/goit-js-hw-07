@@ -22,6 +22,8 @@ function handleCreate(event) {
 }
 
 function createBoxes() {
+  divParent.innerHTML = '';
+  
   for (let i = 0; i < input.value; i += 1)  {
     const box = document.createElement("div");
     divParent.append(box);
@@ -37,7 +39,6 @@ function createBoxes() {
   height = 30;
 }
 
-divParent.append();
 
 destroyBtn.addEventListener("click", handleDestroy);
 function handleDestroy(event) {
