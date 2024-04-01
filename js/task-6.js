@@ -4,7 +4,6 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 
-const form = document.querySelector("#controls");
 const input = document.querySelector("input");
 const createBtn = document.querySelector('button[data-create]');
 const destroyBtn = document.querySelector('button[data-destroy]');
@@ -32,9 +31,13 @@ function createBoxes() {
     width += 10;
     height += 10;
   }
+
   input.value = "";
-  
+  width = 30;
+  height = 30;
 }
+
+divParent.append();
 
 destroyBtn.addEventListener("click", handleDestroy);
 function handleDestroy(event) {
